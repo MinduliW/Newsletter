@@ -36,10 +36,10 @@ const  data = {
 };
 const  jsonData = JSON.stringify(data);
 
-const url = "https://us1.api.mailchimp.com/3.0/lists/90f414f7f9";
+const url = "https://us1.api.mailchimp.com/3.0/lists/ID";
 const options = {
   method : "POST",
-  auth : "minduli1:469d4a3628ef27e74538f1eb2d18f53a-us1"
+  auth : "minduli1:AUTHKEY"
 }
 const request = https.request(url, options, function(response){
 
@@ -66,10 +66,3 @@ app.post("/failure", function(req,res){
   res.redirect("/")
 })
 
-
-// heroku
-// Spv6^A4#\i@M[Fh
-//469d4a3628ef27e74538f1eb2d18f53a-us1
-
-//List ID
-//90f414f7f9
